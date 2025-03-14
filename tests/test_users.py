@@ -39,3 +39,4 @@ class TestUsers:
     def test_user_invalid_values(self, app_url: str, user_id: int):
         response = requests.get(f"{app_url}/api/users/{user_id}")
         assert response.status_code == HTTPStatus.UNPROCESSABLE_ENTITY
+
